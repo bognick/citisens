@@ -1,0 +1,58 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "io.citisens"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "io.citisens"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.citisens"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "io.citisens"
+        },
+        "cordova-plugin-device-sensor-fusion": {
+            "PACKAGE_NAME": "io.citisens"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.citisens"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "io.citisens"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "io.citisens"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "io.citisens"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "io.citisens"
+        },
+        "cordova-plugin-googleplus": {
+            "PACKAGE_NAME": "io.citisens"
+        },
+        "cordova.plugins.diagnostic": {
+            "PACKAGE_NAME": "io.citisens"
+        },
+        "cordova-custom-config": {
+            "PACKAGE_NAME": "io.citisens"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "io.citisens"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "io.citisens"
+        }
+    }
+}

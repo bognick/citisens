@@ -1,0 +1,209 @@
+@import url(../cesium/Build/Cesium/Widgets/widgets.css);
+
+html, body, #cesiumContainer, #cameraContainer{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#cesiumContainer{
+	position: relative;
+}
+
+#cameraContainer{
+	height: 100vh;
+	width:  100vw;
+	position: relative;
+}
+
+#circle{
+	position: absolute;
+	z-index: 3;
+	max-width: 10%;
+	height: auto;
+	margin: auto;
+	right: 5%;
+	bottom: 0;
+	top:0;
+}
+
+#circleClick{
+	display: none;
+	position: absolute;
+	z-index: 3;
+	max-width: 10%;
+	height: auto;
+	margin: auto;
+	right: 5%;
+	bottom: 0;
+	top:0;
+}
+
+#shutterButtonBackground{
+	position: absolute;
+	z-index: 2;
+	height: auto;
+	margin: auto;
+	right: 0px;
+	bottom: 0px;
+	top: 0px;
+	background-color: #000000;
+	width: 20%;
+	opacity: 0.5;
+}
+
+#cross{
+	position: absolute;
+	z-index: 3;
+	max-width: 3%;
+	height: auto;
+	margin: auto;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	transform: rotate(45deg);
+}
+
+.cesium-viewer-bottom{
+	display: none;
+}
+
+.pitch, .roll, .heading, .position {
+	color: white;
+	position: absolute;
+	background-color:black;
+	margin:0;
+	z-index:3;
+	font-size:14px;
+}
+
+.roll{
+	color: red!important;
+	font-size:12px;	
+}
+
+.position {
+	top: 0px;
+}
+.pitch {
+	top: 36px;
+}
+.roll {
+	top: 54px;
+}
+.heading {
+	top: 18px;
+}
+
+.buttons{
+    z-index: 3;
+    position: absolute;
+    left: 10px;
+    width: 40px;
+    font-weight: 300;
+    height:40px;
+    border-radius:20px;
+    border: 1px solid #fff;
+    background: #000;
+    opacity: 0.6;
+    color: #fff;
+    box-shadow: 0px 6px 4px -4px rgba(0,0,0,0.45);
+	font-size:20px;	
+}
+
+#signinButton{
+	z-index: 3;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#toggleButton{
+	bottom: 10px;
+	display: none;
+}
+
+#figure8Button{
+	bottom: 110px;
+	display: none;
+}
+
+#flyButton{
+	bottom: 160px;
+	display: none;
+}
+
+#fusionButton{
+	bottom: 210px;
+	display: none;
+}
+
+#calibrationButton{
+	bottom: 60px;
+	display:none;
+}
+
+#video{
+	height: 100%;
+	width: 100%;
+/*	-moz-transform:scale(2);
+	-webkit-transform:scale(2);
+	-o-transform:scale(2);
+	-ms-transform:scale(2);
+	transform:scale(2);   */
+}
+
+#canvas {
+	display: none;
+	margin: 0 auto;
+}
+
+.fa{
+	font-size:20px!important;
+}
+
+.metrics {
+    position: absolute;
+    width: auto;
+	height: auto;
+	top:0;
+	margin: auto;
+}
+
+.metricsInfo {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6px;
+    color: #fff;
+    border-radius: 10px;
+    display: none;
+    text-align: justify;
+    margin: 0 auto;
+	font-size:14px;
+	z-index:4;
+}
+
+.show{
+	display: block;
+	animation: seconds 4.0s forwards;
+	animation-iteration-count: 1;
+	animation-delay: 0s;
+}
+
+@keyframes seconds {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

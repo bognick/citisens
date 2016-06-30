@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.citisens" version="0.9.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://citisens.eu/1.0">
+    <name>CITISENS</name>
+    <description> 
+		CITISENS Wildfire reporter
+    </description>
+    <author email="bogdos@di.uoa.gr" href="http://citisens.eu">
+        FLogA group
+    </author>
+    <icon density="ldpi" height="42" platform="android" src="www/img/logo.png" width="30" />
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+		<splash src="res/screen/android/splash-land-xhdpi.png" density="land-xhdpi"/>        
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <engine name="android" spec="~5.1.1"/>
+    <preference name="Fullscreen" value="true" />
+    <preference name="LogLevel" value="DEBUG" />
+    <preference name="backgroundColor" value="0x00000000" />
+    <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
+    <preference name="xwalkMode" value="embedded" />
+    <preference name="xwalkMultipleApk" value="true" />
+    <preference name="Orientation" value="landscape" />
+    <plugin name="cordova-plugin-googleplus" spec="~4.0.8">
+        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.1065070870317-k7gslbme3ld87vjssovj30qcqdp5kqqf"/>
+    </plugin>
+    <preference name="AutoHideSplashScreen" value="false" />    
+    <preference name="SplashScreenDelay" value="15000" />
+	<preference name="SplashMaintainAspectRatio" value="true" />
+	<preference name="SplashShowOnlyFirstTime" value="true" />    
+	<preference name="FadeSplashScreen" value="true"/>
+	<preference name="FadeSplashScreenDuration" value="1000"/>
+	<preference name="ShowSplashScreenSpinner" value="false"/>
+	<preference name="android-minSdkVersion" value="21" />
+</widget>
